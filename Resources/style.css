@@ -1,0 +1,237 @@
+/* standard reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-family: "poiret one", Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(22, 21, 21);
+  color: white;
+  text-shadow: 1.5px 1.5px black;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/comfortaa/v45/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfIA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poiretone/v16/UqyVK80NJXN4zfRgbdfbo55cVw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Zeyada';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/zeyada/v19/11hAGpPTxVPUbgZzM2ys.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+a {
+  color: #E0CA77;
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: square;
+  padding-left: 1rem;
+}
+
+h2,
+p {
+  text-align: center;
+  font-family: "poiret one";
+}
+
+section {
+  padding: 1rem;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+
+nav {
+  position: fixed;
+  font-family: "poiret one";
+  z-index: 3;
+  background-color: #26266A;
+  width: 100%;
+  justify-content: center;
+}
+
+nav li {
+  margin-left: 2rem;
+  display: inline-flex;
+  list-style: none;
+  
+
+}
+
+.banner {
+  background-image: url("https://scontent-lax3-1.xx.fbcdn.net/v/t31.18172-8/19467799_10211470376209623_802239417035030177_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=4dc865&_nc_ohc=XesxRQK2xE8AX_bJJm7&_nc_ht=scontent-lax3-1.xx&oh=00_AfD5Txm2aOIyhgFKOSKK6DLgf60HquFOAv4lkQGi8xWF8w&oe=6583AACB");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 15rem;
+  margin: 5rem;
+}
+
+h1 {
+  font-family: "zeyada", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5rem;
+  text-align: center;
+  border: inset .25rem white;
+}
+
+@media only screen and (max-width: 871px) {
+  h1 {
+    font-family: "zeyada", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    border: inset .25rem white;
+  }
+  .banner p {
+    position: relative;
+    top: 1rem;
+    opacity: .7;
+    background-color: black;
+    text-align: left;
+  }
+
+}
+
+@media only screen and (max-width: 735px) {
+  h1 {
+    font-family: "zeyada", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    border: inset .25rem white;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  h1 {
+    font-family: "zeyada", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    border: inset .25rem white;
+  }
+}
+
+@media only screen and (max-width: 489px) {
+  .banner p {
+    font-family: "poiret one", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .8rem;
+    text-align: center;
+  }
+}
+
+.banner p {
+  opacity: .7;
+  background-color: black;
+  text-align: left;
+}
+
+.pictures {
+  flex-wrap: wrap;
+  text-align: center;
+  background-image: linear-gradient(#26266A, #3AAEB6, #26266A);
+  width: 100%;
+}
+
+.pictures img {
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*Allows for shrinking*/
+  max-height: 15rem;
+  max-width: 100%;
+  border: solid 2px #DDC775;
+  border-radius: 60%;
+}
+
+main,
+footer {
+  position: relative;
+  top: 4rem;
+  text-align: center;
+}
+
+.events,
+.connect,
+aside {
+  margin: 2rem;
+}
+
+.events {
+  display: inline-block;
+}
+
+.events div {
+  height: 7rem;
+  width: 20rem;
+  margin: .5rem;
+}
+
+.ECS {
+  display: inline-block;
+  background-color: rgba(255, 0, 0, 0.551);
+  border: solid 3px #DFC876;
+}
+
+.WCS {
+  display: inline-block;
+  background-image: linear-gradient(to right, black, #1C98FD);
+  border: solid 2px #0C406B;
+}
+
+.fusion {
+  display: inline-block;
+  background-image: linear-gradient(to bottom right, #FE69C2, #3AAEB6, #5050DF);
+  border: groove 2px #303086;
+}
+
+.ECS,
+.WCS,
+.fusion {
+  padding-left: .2rem;
+  text-align: left;
+}
+
+.fusion a {
+  color: white;
+}
+
+.connect {
+  background-color: #0F5086;border-top: solid 2px #26266A;
+  border-bottom: solid 2px #26266A;
+}
+
+.connect h2 {
+  background-color: #26266A;
+}
+
+.connect ul {
+  text-align: center;
+  list-style-type: none;
+  line-height: 1.5rem;
+  
+}
+
+aside p {
+  font-family: "zeyada", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+}
